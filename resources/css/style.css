@@ -1,0 +1,162 @@
+body {
+  font-family: "Segoe UI", Verdana;
+  background-color : black;
+  font-size: 22px;
+  color: seashell;
+  margin: 0px;
+}
+
+/* ------------------------------------------------- */
+/* The header                                        */
+/* ------------------------------------------------- */
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  height: 80px;
+  background-color: black;
+}
+
+.logo {
+  margin: 10px;
+  flex-grow: 1; /* The logo push the navigation on the right */
+}
+
+.logo img {
+  height: 50px;   /* The image is smaller than the real size */
+}
+
+nav a {
+  color: seashell;
+  margin: 0px 10px;
+}
+
+.content {
+  width: 1200px;
+  margin: 0px auto;
+  position: relative;
+  top: 80px;	
+}
+
+/* ------------------------------------------------- */
+/* Content common styles                             */
+/* ------------------------------------------------- */
+h1 {
+  font-size: 32px;
+  margin: 10px 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 10px 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* ------------------------------------------------- */
+/* The mision div                                    */
+/* ------------------------------------------------- */
+#mission {
+  background-image: url("../images/img-mission-background.jpg");
+  height: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.mission_band {
+  background-color: black;	
+  width: 100%;
+}
+
+/* ------------------------------------------------- */
+/* The featured tea div                              */
+/* ------------------------------------------------- */
+#featured_tea {
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-center: center;
+}
+
+.tea_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tea_presentation {
+  margin: 10px 20px;
+}
+
+.tea_presentation img {
+  width: 300px;
+}
+
+/* ------------------------------------------------- */
+/* The locations div                                 */
+/* ------------------------------------------------- */
+#locations {
+  background-image: url("../images/img-locations-background.jpg");
+  height: 570px;
+}
+
+#locations h1 {
+  padding: 100px 0px 25px 0px;
+}
+
+.locations_list {
+  display: flex;
+  justify-content: center;
+}
+
+.location {
+  background-color: black;
+  width: 300px;
+  height: 240px;
+  margin: 0px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.location * {
+  margin: 0px;
+}
+
+/* ------------------------------------------------- */
+/* The contact div                                   */
+/* ------------------------------------------------- */
+.contact h1 {
+  margin-bottom: 30px;
+}
+
+.contact p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+/* ------------------------------------------------- */
+/* The footer div                                    */
+/* ------------------------------------------------- */
+.footer {
+  width: 100%;
+  position: relative;
+  top: 120px;
+}
+
+.footer p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px;
+  text-align: left;
+}
