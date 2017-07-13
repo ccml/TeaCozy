@@ -1,5 +1,5 @@
 body {
-  font-family: "Segoe UI", Verdana;
+  font-family: "Helvetica", sans-serif;
   background-color : black;
   font-size: 22px;
   color: seashell;
@@ -38,21 +38,13 @@ nav a {
   width: 1200px;
   margin: 0px auto;
   position: relative;
-  top: 80px;	
+  top: 80px;
 }
 
 /* ------------------------------------------------- */
 /* Content common styles                             */
 /* ------------------------------------------------- */
-h1 {
-  font-size: 32px;
-  margin: 10px 0px;
-  padding: 0px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 24px;
+h2, h3, h4, h5 {
   margin: 10px 0px;
   padding: 0px;
   text-align: center;
@@ -81,13 +73,14 @@ p {
 /* The featured tea div                              */
 /* ------------------------------------------------- */
 #featured_tea {
-  margin: 50px 0px;
+  padding: 80px;
   display: flex;
   flex-direction: column;
   justify-center: center;
 }
 
 .tea_list {
+  margin-top: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -95,22 +88,30 @@ p {
 
 .tea_presentation {
   margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .tea_presentation img {
   width: 300px;
 }
 
+.tea_presentation span {
+  margin-top: 18px;
+  text-align: center;
+}
+
 /* ------------------------------------------------- */
 /* The locations div                                 */
 /* ------------------------------------------------- */
 #locations {
+  padding-top: 70px;
   background-image: url("../images/img-locations-background.jpg");
   height: 570px;
 }
 
-#locations h1 {
-  padding: 100px 0px 25px 0px;
+#locations h2 {
+  padding: 0px 0px 20px 0px;
 }
 
 .locations_list {
@@ -121,7 +122,7 @@ p {
 .location {
   background-color: black;
   width: 300px;
-  height: 240px;
+  height: 275px;
   margin: 0px 16px;
   display: flex;
   flex-direction: column;
@@ -135,14 +136,14 @@ p {
 /* ------------------------------------------------- */
 /* The contact div                                   */
 /* ------------------------------------------------- */
-.contact h1 {
-  margin-bottom: 30px;
+.contact {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-.contact p {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 20px 0px;
+.contact h3 {
+  margin-bottom: 30px;
 }
 
 /* ------------------------------------------------- */
@@ -151,12 +152,11 @@ p {
 .footer {
   width: 100%;
   position: relative;
-  top: 120px;
+  margin-top: 120px ;
+  margin-bottom: 30px;
 }
 
-.footer p {
-  font-size: 18px;
-  font-weight: bold;
+.footer h5 {
   margin: 20px;
   text-align: left;
 }
